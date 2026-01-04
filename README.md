@@ -3,7 +3,7 @@
 Interactive 3D terrain viewer featuring high-resolution elevation data and smooth navigation.
 
 ## 🌐 Live Site
-**[View Live Demo](https://kashiwa.co-place.com/cmap/jptm)**
+**[View Live Demo](https://co-place.com/terrain)**
 
 ## 🛠️ Technology Stack
 
