@@ -14,7 +14,6 @@ const mountains = [
     { name: "富士山 Mt.Fuji", lat: 35.35, lng: 138.72 },
     { name: "阿蘇山 Mt.Aso", lat: 32.8985064, lng: 131.0874754 },
     { name: "槍ヶ岳 Yariga-take", lat: 36.3420332, lng: 137.6476213 },
-    { name: "奥穂高岳 Okuhotaka-take", lat: 36.289167, lng: 137.648056 },
     { name: "白馬岳 Hakuba-take", lat: 36.7587181, lng: 137.7585896 },
     { name: "八ヶ岳 Yatsuga-take", lat: 35.97397, lng: 138.31987 },
     { name: "蔵王山 Mt.Zao", lat: 38.1529672, lng: 140.4458267 },
@@ -65,7 +64,7 @@ map.addControl(attCntl, 'bottom-right');
 map.on('load', async () => {
     map.addSource('mapterhorn-dem', {
         'type': 'raster-dem',
-        //'tiles': ['mapterhorn://{z}/{x}/{y}'],//use this if you prefer PMTiles
+        //'tiles': ['mapterhorn://{z}/{x}/{y}'], // Use this if you prefer PMTiles
         'url': 'https://tiles.mapterhorn.com/tilejson.json',
         'encoding': 'terrarium',
         'tileSize': 512,
@@ -91,7 +90,7 @@ map.on('load', async () => {
         'maxzoom': 17
     });
     
-    map.setTerrain({ 'source': 'mapterhorn-dem', 'exaggeration': 1 });
+    map.setTerrain({ 'source': 'mapterhorn-dem', 'exaggeration': 1.5 });
 
     map.addLayer({
         'id': 'mapterhorn_hillshade',
