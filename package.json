@@ -1,0 +1,23 @@
+{
+  "name": "japan-terrain-view",
+  "version": "1.0.0",
+  "description": "Interactive 3D terrain viewer for Japanese mountains powered by Mapterhorn & MapLibre GL JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": ["terrain", "japan", "maplibre", "mapterhorn"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "maplibre-contour": "^0.1.0",
+    "maplibre-gl": "^5.15.0",
+    "pmtiles": "^4.3.2",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
